@@ -10,15 +10,20 @@
 </head>
 <body>
     <div id="header">VDL Tipping</div>
+
     <div class="match-tipping">
         <div class="percentage-bar">
-            <div class="percentage"></div>
+            <div id="blueSection" class="section"></div>
+            <div id="drawSection" class="section"></div>
+            <div id="greySection" class="section"></div>
         </div>
         <div class="buttons">
-            <button class="btn">blue</button>
-            <button class="btn">Draw</button>
-            <button class="btn">Grey</button>
+            <button class="btn" onclick="updateSection('blue')">Blue</button>
+            <button class="btn" onclick="updateSection('white')">Draw</button>
+            <button class="btn" onclick="updateSection('grey')">Grey</button>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
