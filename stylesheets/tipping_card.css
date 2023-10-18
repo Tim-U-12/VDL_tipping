@@ -1,21 +1,22 @@
 .match-tipping {
+    display: flex;
     width: 100%;
     margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.percentage-bar-container {
+    width: 500px;
+    margin-bottom: 10px;    
 }
 
 .percentage-bar {
     display: flex;
     height: 30px;
     border: 1px solid black;
-}
-
-.percentage {
-    width: 400px;
-    height: 30px;
-    background:blue;
-    border: 1px dashed black;
-    border-radius: 15px;
-    position: relative;
+    border-radius: 50px;
 }
 
 .section {
@@ -24,24 +25,42 @@
 
 #blueSection {
     background-color: blue;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-#drawSection {
-    background-color: white;
+#purpleSection {
+    background-color: purple;
 }
 
-#greySection {
-    background-color: grey;
+#redSection {
+    background-color: red;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.singleSection {
+    border-radius: 15px;
+}
+
+.leftRounded {
+    border-radius: 15px 0 0 15px;
+}
+
+.rightRounded {
+    border-radius: 0 15px 15px 0;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 
 .btn {
-    .btn {
-        padding: 10px;
-        margin: 5px;
-        cursor: pointer;
-    }
+    width: 100px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
